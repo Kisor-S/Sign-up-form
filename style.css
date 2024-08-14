@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: logoFont;
+    src: url(norse-bold-webfont.woff);
+}
+
 main {
     margin: auto 10%;
     display: flex;
@@ -16,4 +21,24 @@ main {
     background-repeat: no-repeat;
     height: 100vh;
     min-width: 35%;
+}
+
+.logo {
+    margin-top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background-color: rgba(84, 89, 88, 0.2);
+    padding: 0.5em;
+}
+
+.logo>img {
+    height : 8rem;
+}
+
+.logo > h1 {
+    font-family: logoFont;
+    font-size: 6rem;
+    color: aliceblue;
 }
