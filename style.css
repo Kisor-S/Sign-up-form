@@ -9,3 +9,11 @@ main {
     display: flex;
 }
 
+.image-sidebar {
+    background-image:url(/fredrik-solli-wandem-fWs5UzeoVnE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 35%;
+}
