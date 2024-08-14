@@ -7,11 +7,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background-image">
-      <img
-        src="fredrik-solli-wandem-fWs5UzeoVnE-unsplash.jpg"
-        alt="An image of leaves"
-      />
+    <div class="main">
+      <div class="image-sidebar">
+        <div class="logo">
+          <img src="odin-lined.png" alt="A lined image of Odin" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-header">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </h2>
+          <h2>You know you want to.</h2>
+        </div>
+
+        <div class="form-main">
+          <form>
+            <h3>Let's do this!</h3>
+
+            <div class="name-row">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" />
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+
+            <div class="contact-row">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="number" name="email" id="email" />
+            </div>
+
+            <div class="passwords">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+              <label for="confirm_password"> CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="form-footer">
+          <button type="submit">Create Account</button>
+          <p>Already have an account?</p>
+          <a href="">Log in</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
