@@ -65,3 +65,36 @@ main {
     padding-bottom: 4rem;
     padding-right: 10rem;
 }
+
+.form-footer > p {
+    display: inline;
+    font-size: medium;
+}
+
+.form-footer > button {
+    display: block;
+    background-color: rgb(39, 102, 74);
+    padding: 0.75em 3em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    color: aliceblue;
+    font-size: medium;
+    box-shadow:;
+    margin: 2em 0;
+}
+
+.form-footer >button:focus, .form-footer >button:hover {
+    cursor: pointer;
+}
+
+.form-footer >button:active {
+    color: rgb(39, 102, 74) ;
+    background-color: aliceblue;
+}
+
+.form-footer > a {
+    color: rgb(39, 102, 74);
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
