@@ -23,35 +23,49 @@
           </h2>
           <h2>You know you want to.</h2>
         </div>
-        <div class="form-main">
-          <form>
-            <h3>Let's do this!</h3>
-            <div class="name-row">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" />
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" />
-            </div>
-            <div class="contact-row">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-              <label for="phone-number">PHONE NUMBER</label>
-              <input type="number" name="email" id="email" />
-            </div>
-            <div class="passwords">
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
-              <label for="confirm_password"> CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                name="confirm_password"
-                id="confirm_password"
-              />
-            </div>
-          </form>
+        <form method="get" id="Sign-up">
+            <div class="form-main">
+              <h2>Let's do this!</h2>
+              <div class="name-row">
+                <div class="form-row">
+                    <label for="first-name">FIRST NAME *</label>
+                    <input type="text" name="first-name" id="first-name" required />
+                </div>
+                <div class="form-row">
+                    <label for="last-name">LAST NAME *</label>
+                    <input type="text" name="last-name" id="last-name" required />
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="form-row">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-row">
+                    <label for="phone-number">PHONE NUMBER *</label>
+                    <input type="tel" name="email" id="email"  required/>
+                </div>
+              </div>
+              <div class="passwords-row">
+                <div class="form-row">
+                    <label for="password">PASSWORD *</label>
+                    <input type="password" name="password" id="password" required/>
+                    <span>Required fields are marked with (*)</span>
+                </div>
+                <div class="form-row">
+                    <label for="confirm_password"> CONFIRM PASSWORD *</label>
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      id="confirm_password"
+                      required
+                    />
+                </div>
+              </div>
+        </form>
         </div>
         <div class="form-footer">
-          <button type="submit">Create Account</button>
+        <button type="submit" form="Sign-up">Create Account</button>
           <p>Already have an account?</p>
           <a href="">Log in</a>
         </div>

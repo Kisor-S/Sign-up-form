@@ -64,11 +64,13 @@ main {
     gap: 2rem;
     padding-bottom: 4rem;
     padding-right: 10rem;
+    max-height: 32vh;
 }
 
 .form-footer > p {
     display: inline;
     font-size: medium;
+    box-shadow: inset;
 }
 
 .form-footer > button {
@@ -79,11 +81,10 @@ main {
     border-radius: 0.5em;
     color: aliceblue;
     font-size: medium;
-    box-shadow:;
     margin: 2em 0;
 }
 
-.form-footer >button:focus, .form-footer >button:hover {
+.form-footer > button:focus, .form-footer > button:hover {
     cursor: pointer;
 }
 
@@ -97,4 +98,52 @@ main {
     font-size: medium;
     font-weight: bold;
     text-decoration: none;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.name-row, .contact-row, .passwords-row{
+    display: flex;
+    gap:4em;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 15em;
+    height: 2em;
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 0.25em;
+    background-color: #fefefe;
+    padding: 1em 0.5em;
+    font-size: medium;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(52, 133, 96);
+}
+
+label {
+    font-size: small;
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 0.25em;
+}
+
+span {
+    margin-top: 0.75em;
+    font-size: small;
+    color: black;
+    font-style: italic;
 }
